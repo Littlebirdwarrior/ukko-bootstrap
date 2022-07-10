@@ -1,0 +1,261 @@
+<!doctype html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!---favicone--->
+    <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
+
+    <title>Carousel Template for Bootstrap</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link href="scss/style.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="" rel="stylesheet">
+</head>
+
+
+<body>
+
+<!---header--->
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <header class="masthead mb-auto">
+        <div class="inner">
+            <h3 class="masthead-brand">Cover</h3>
+            <nav class="nav nav-masthead justify-content-center">
+                <a class="nav-link active" href="#">Home</a>
+                <a class="nav-link" href="#">Features</a>
+                <a class="nav-link" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
+</div>
+    <!---main--->
+    <main role="main">
+
+        <!----- Section 1 : hero------------->
+
+        <section id="hero" class="container-fluid ">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img class="first-slide"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="First slide">
+                        <div class="container">
+                            <div class="carousel-caption text-left">
+                                <h1>Example headline.</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="second-slide"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="Second slide">
+                        <div class="container">
+                            <div class="carousel-caption">
+                                <h1>Another example headline.</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Learn more</a></p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <img class="third-slide"
+                             src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
+                             alt="Third slide">
+                        <div class="container">
+                            <div class="carousel-caption text-right">
+                                <h1>One more for good measure.</h1>
+                                <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
+                                    porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
+                                    elit.</p>
+                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Browse gallery</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </section>
+
+        <!----- Section 2 : présentation------------->
+        <section id="presentation" class="container col-10">
+
+            <!-- Three columns of text below the carousel -->
+            <div class="row">
+                <div class="col-6">
+                    <h2>
+                        Présentation
+                    </h2>
+                    <p>
+                        <strong>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam volutpat id erat nec
+                            dignissim. Mauris imperdiet porta ex et suscipit.
+                        </strong>
+                    </p>
+                    <p>
+                        Suspendisse tortor massa, fermentum id pulvinar at, placerat ac nulla. Aliquam vel scelerisque
+                        nibh. Aenean vitae porta leo. Fusce convallis erat non est varius, et efficitur augue convallis.
+                        Fusce in elit sollicitudin libero dapibus rhoncus.
+                    </p>
+                    <p>
+                        Suspendisse tortor massa, fermentum id pulvinar at, placerat ac nulla. Aliquam vel scelerisque
+                        nibh. Aenean vitae porta leo. Fusce convallis erat non est varius, et efficitur augue convallis.
+                        Fusce in elit sollicitudin libero dapibus rhoncus.
+                    </p>
+                    <ul class="row">
+                        <li class="col">
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                                 src="https://placekitten.com/g/100/40"/>
+                        </li>
+                        <li class="col">
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                                 src="https://placekitten.com/g/100/40"/>
+                        </li>
+                        <li class="col">
+                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                                 src="https://placekitten.com/g/100/40"/>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-6 row justify-content-between">
+                    <div class="col-6">
+                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                             src="https://placekitten.com/g/200/200"/>
+                    </div>
+                    <div class="col-6">
+                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                             src="https://placekitten.com/g/200/200"/>
+                    </div>
+                    <div class="col-12">
+                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                             src="https://placekitten.com/g/500/200"/>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </section><!-- /.container -->
+
+        <!----- Section 3 : présentation------------->
+        <section id="expertise" class="container-fluid">
+            <article class="row">
+                <div class="col-6">
+                    <figure>
+                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                             src="https://placekitten.com/g/500/500"/>
+                    </figure>
+                </div>
+                <div class="col-6">
+                    <svg></svg>
+                    <div>
+                        <h2> Notre expertises</h2>
+                        <p>Suspendisse tortor massa, fermentum id pulvinar at, placerat ac nulla. Aliquam vel
+                            scelerisque
+                            nibh. Aenean vitae porta leo. Fusce convallis erat non est varius, et efficitur augue
+                            convallis.
+                            Fusce in elit sollicitudin libero dapibus rhoncus.</p>
+                        <p>Suspendisse tortor massa, fermentum id pulvinar at, placerat ac nulla. Aliquam vel
+                            scelerisque
+                            nibh. Aenean vitae porta leo. Fusce convallis erat non est varius, et efficitur augue
+                            convallis.
+                            Fusce in elit sollicitudin libero dapibus rhoncus.</p>
+                        <ul>
+                            <li>Fusce in elit sollicitudin</li>
+                            <li>Fusce in elit sollicitudin</li>
+                            <li>Fusce in elit sollicitudin</li>
+                            <li>Fusce in elit sollicitudin</li>
+                            <li>Fusce in elit sollicitudin</li>
+                        </ul>
+                    </div>
+                </div>
+            </article>
+
+        </section>
+
+        <!----- Section 4 : features------------->
+        <section id="feature" class="feature container">
+            <div class="feature-content row">
+                <a class="mx-0 content-a col">
+                    <div class="card feature-card">
+                        <img class="" src="https://placekitten.com/g/200/100" alt="Card image cap">
+                        <div class="">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </a>
+                <!------------>
+                <a class="mx-0 content-a col">
+                    <div class="card feature-card">
+                        <img class="" src="https://placekitten.com/g/200/100" alt="Card image cap">
+                        <div class="">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                                the card's content.</p>
+                            <a href="#" class="btn btn-primary">Go somewhere</a>
+                        </div>
+                    </div>
+                </a>
+                <!------------>
+                <a class="mx-0 content-a col">
+                <div class="card feature-card">
+                    <img class="" src="https://placekitten.com/g/200/100" alt="Card image cap">
+                    <div class="">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+            </a>
+                <!------------>
+            </div>
+
+
+        </section>
+
+        <!-- FOOTER -->
+        <footer class="container">
+            <p class="float-right"><a href="#">Back to top</a></p>
+            <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        </footer>
+    </main>
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>

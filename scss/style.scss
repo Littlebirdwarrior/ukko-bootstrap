@@ -1,0 +1,22 @@
+@import "bootstrap-import";
+@import "caroussel";
+
+// 8. Add additional custom code here
+
+
+
+.feature {
+  background: #f01;
+  .feature-content {
+    background: #0a53be;
+  }
+  .content-a {
+    display: block;
+
+    background: #c7dbd2;
+  }
+  .feature-card {
+    width: 30%;
+    background: #0f5132;
+  }
+}
