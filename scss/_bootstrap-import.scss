@@ -38,3 +38,38 @@
 
 
 
+//Colors
+
+//All variables in the $theme-colors map are defined as standalone variables. To modify an existing color in our $theme-colors map, add the following to your custom Sass file:
+
+$white: #fff;
+$black: #000;
+$hell: #f2f2f2;
+$primary: #2498d0 !important;
+
+
+//Later on, these variables are set in Bootstrap’s $theme-colors map:
+$theme-colors: (
+        "primary":    $primary,
+        "secondary":  $secondary,
+        "success":    $success,
+        "info":       $info,
+        "warning":    $warning,
+        "danger":     $danger,
+        "light":      $light,
+        "dark":       $dark
+);
+
+$custom-colors: (
+        "white": $white,
+        "black": $black,
+         "hell": $hell,
+);
+
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.btn-primary {
+  background: $primary;
+  border-color: $primary;
+}
