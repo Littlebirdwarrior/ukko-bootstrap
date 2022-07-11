@@ -25,18 +25,23 @@
 
 <!---header--->
 
-<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-    <header class="masthead mb-auto">
-        <div class="inner">
-            <h3 class="masthead-brand">Cover</h3>
-            <nav class="nav nav-masthead justify-content-center">
-                <a class="nav-link active" href="#">Home</a>
-                <a class="nav-link" href="#">Features</a>
-                <a class="nav-link" href="#">Contact</a>
-            </nav>
+<header class="py-2 bg-dark text-white">
+    <div class="container">
+        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
+            <a href="/" class="d-flex align-items-center mb-2 mb-md-0">
+                <img src="assets/img/ukoo-logo.png" alt="logo ukoo"/>
+            </a>
+            <ul class="nav col-12 col-md-7 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+                <li><a href="#" class="nav-link px-2 text-white">Présentation</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Accès</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">Pricing</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+                <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+
         </div>
-    </header>
-</div>
+    </div>
+</header>
     <!---main--->
     <main role="main">
 
@@ -60,7 +65,7 @@
                                 <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi
                                     porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id
                                     elit.</p>
-                                <p><a class="btn btn-lg btn-primary" href="#" role="button">Sign up today</a></p>
+                                <a class="btn btn-lg btn-primary m-auto" href="#" role="button">Sign up today</a>
                             </div>
                         </div>
                     </div>
@@ -94,22 +99,28 @@
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
+                    <span class="carousel-control-prev-icon" aria-hidden="true">
+                    </span>
+<!--                    <span class="sr-only">Previous</span>-->
                 </a>
                 <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
+                    <span class="carousel-control-next-icon" aria-hidden="true">
+                    </span>
+<!--                    <span class="sr-only">Next</span>-->
                 </a>
             </div>
         </section>
 
         <!----- Section 2 : présentation------------->
-        <section id="presentation" class="container col-10">
+        <?xml version="1.0" encoding="UTF-8"?><svg id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 873 22.93" fill="#f2f2f2">
+        <path d="M0,22.93H873v-5.2S467.45,11.7,369.98,7.38C280.53,3.42,11.63-13.52,0,22.93Z"/></svg>
+        <section id="presentation" class="container col-10 py-3">
 
-            <!-- Three columns of text below the carousel -->
+            <!--------------->
+
             <div class="row">
-                <div class="col-6">
+
+                <div class="col-md-6 pb-md-3">
                     <h2>
                         Présentation
                     </h2>
@@ -131,30 +142,30 @@
                     </p>
                     <ul class="row">
                         <li class="col">
-                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                            <img class="card-img-right flex-auto d-lg-block" alt="Card image cap"
                                  src="https://placekitten.com/g/100/40"/>
                         </li>
                         <li class="col">
-                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                            <img class="card-img-right flex-auto d-lg-block" alt="Card image cap"
                                  src="https://placekitten.com/g/100/40"/>
                         </li>
                         <li class="col">
-                            <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                            <img class="card-img-right flex-auto d-lg-block" alt="Card image cap"
                                  src="https://placekitten.com/g/100/40"/>
                         </li>
                     </ul>
                 </div>
-                <div class="col-6 row justify-content-between">
+                <div class="col-md-6 row justify-content-between">
                     <div class="col-6">
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                        <img class="card-img-right flex-auto" alt="Card image cap"
                              src="https://placekitten.com/g/200/200"/>
                     </div>
                     <div class="col-6">
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                        <img class="card-img-right flex-auto" alt="Card image cap"
                              src="https://placekitten.com/g/200/200"/>
                     </div>
                     <div class="col-12">
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
+                        <img class="card-img-right flex-auto" alt="Card image cap"
                              src="https://placekitten.com/g/500/200"/>
                     </div>
                 </div>
@@ -164,18 +175,19 @@
 
         </section><!-- /.container -->
 
-        <!----- Section 3 : présentation------------->
+        <!----- Section 3 : expertise------------->
         <section id="expertise" class="container-fluid">
             <article class="row">
-                <div class="col-6">
+                <div class="col-md-6 mt-3">
                     <figure>
-                        <img class="card-img-right flex-auto d-none d-lg-block" alt="Card image cap"
-                             src="https://placekitten.com/g/500/500"/>
+                        <img class="card-img-right flex-auto" alt="Card image cap"
+                             src="https://placekitten.com/g/700/300"/>
                     </figure>
                 </div>
-                <div class="col-6">
-                    <svg></svg>
-                    <div>
+                <div class="col-md-6">
+                    <?xml version="1.0" encoding="UTF-8"?><svg class="flip-vertical" id="Calque_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 873 22.93" fill="#2498d0">
+                        <path d="M0,22.93H873v-5.2S467.45,11.7,369.98,7.38C280.53,3.42,11.63-13.52,0,22.93Z"/></svg>
+                    <div class="py-3 px-6">
                         <h2> Notre expertises</h2>
                         <p>Suspendisse tortor massa, fermentum id pulvinar at, placerat ac nulla. Aliquam vel
                             scelerisque
@@ -201,53 +213,56 @@
         </section>
 
         <!----- Section 4 : features------------->
-        <section id="feature" class="feature container">
-            <div class="feature-content row">
-                <a class="mx-0 content-a col">
-                    <div class="card feature-card">
-                        <img class="" src="https://placekitten.com/g/200/100" alt="Card image cap">
-                        <div class="">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
+        <section id="feature" class="feature container py-5">
+            <div class="feature-content d-flex flex-wrap justify-content-center justify-content-md-between col-md-8 m-auto">
+                    <div class="feature-card">
+                        <h5>Titre niveau 5</h5>
+                        <a class="btn btn-primary" href="#" role="button">Link</a>
                     </div>
-                </a>
-                <!------------>
-                <a class="mx-0 content-a col">
-                    <div class="card feature-card">
-                        <img class="" src="https://placekitten.com/g/200/100" alt="Card image cap">
-                        <div class="">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                                the card's content.</p>
-                            <a href="#" class="btn btn-primary">Go somewhere</a>
-                        </div>
-                    </div>
-                </a>
-                <!------------>
-                <a class="mx-0 content-a col">
-                <div class="card feature-card">
-                    <img class="" src="https://placekitten.com/g/200/100" alt="Card image cap">
-                    <div class="">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
-                            the card's content.</p>
-                        <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
+                <div class="feature-card">
+                    <h5>Titre niveau 5</h5>
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
                 </div>
-            </a>
-                <!------------>
+                <div class="feature-card">
+                    <h5>Titre niveau 5</h5>
+                    <a class="btn btn-primary" href="#" role="button">Link</a>
+                </div>
+
             </div>
 
 
         </section>
+        <!----- Section 4 : form------------->
+
 
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2018 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+        <footer class="container-fluid">
+            <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="#">Bottom navbar</a>
+                    <div class="" id="">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                            </li>
+                            <li class="nav-item dropup">
+                                <a class="nav-link dropdown-toggle" href="#" id="dropdown10" data-bs-toggle="dropdown" aria-expanded="false">Dropup</a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdown10">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </footer>
     </main>
 

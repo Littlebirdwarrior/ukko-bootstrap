@@ -1,22 +1,8 @@
-@import "bootstrap-import";
-@import "caroussel";
+@import "_bootstrap-import";
+@import "_reset";
+@import "_variables";
+@import "_header";
+@import "_layout";
+@import "_footer";
 
-// 8. Add additional custom code here
 
-
-
-.feature {
-  background: #f01;
-  .feature-content {
-    background: #0a53be;
-  }
-  .content-a {
-    display: block;
-
-    background: #c7dbd2;
-  }
-  .feature-card {
-    width: 30%;
-    background: #0f5132;
-  }
-}

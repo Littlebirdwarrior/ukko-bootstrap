@@ -1,0 +1,46 @@
+//********************Les variables
+
+//Colors
+
+$white : #fff;
+
+
+
+//Sizing
+
+
+//fonts
+
+
+
+//autres
+
+.bg-red {
+  background: #d06969;
+}
+
+.bg-green {
+  background: #c7dbd2;
+}
+
+.bg-yellow {
+  background: #ffc720;
+}
+
+//************************Les mixins
+
+@mixin fit-content {
+  width: fit-content;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+}
+
+
+@mixin flip-vertical {
+  transform: scaleX(-1);
+}
+
+.flip-vertical {
+  @include flip-vertical
+}
