@@ -1,5 +1,9 @@
 // ************Les style de la pages
 
+body {
+  background: $hell;
+}
+
 //Section 1 : hero
 
 /* CUSTOMIZE THE CAROUSEL
@@ -7,7 +11,11 @@
 
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: -1rem;
+  z-index: -1;
+  @media (min-width: 1200px) {
+    margin-bottom: -3rem;
+  }
   /* Since positioning the image, we need to help out the caption */
   .carousel-caption {
     position: absolute;
@@ -18,8 +26,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-  background-color: #777;
+  height: 22rem;
   > img {
     position: absolute;
     top: 0;
@@ -44,6 +51,10 @@
 
 //Section 2 : présentation
 
+#presentation {
+  background: $hell;
+  padding: 4rem 0;
+}
 
 //Section 3 : présentation
 

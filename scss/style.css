@@ -17912,6 +17912,10 @@ progress {
   padding: 0 !important;
 }
 
+.bg-hell {
+  background: #f2f2f2;
+}
+
 .bg-red {
   background: #d06969;
 }
@@ -17928,12 +17932,22 @@ progress {
   transform: scaleX(-1);
 }
 
+body {
+  background: #f2f2f2;
+}
+
 /* CUSTOMIZE THE CAROUSEL
 -------------------------------------------------- */
 /* Carousel base class */
 .carousel {
-  margin-bottom: 4rem;
+  margin-bottom: -1rem;
+  z-index: -1;
   /* Since positioning the image, we need to help out the caption */
+}
+@media (min-width: 1200px) {
+  .carousel {
+    margin-bottom: -3rem;
+  }
 }
 .carousel .carousel-caption {
   position: absolute;
@@ -17943,8 +17957,7 @@ progress {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
-  background-color: #777;
+  height: 22rem;
 }
 .carousel-item > img {
   position: absolute;
@@ -17963,6 +17976,11 @@ progress {
     line-height: 1.4;
   }
 }
+#presentation {
+  background: #f2f2f2;
+  padding: 4rem 0;
+}
+
 .feature .feature-content .feature-card {
   min-width: 250px;
   width: 25%;
