@@ -1,16 +1,12 @@
 //********************Les variables
 @import "../node_modules/bootstrap/scss/variables";
 //colors
-
-//Colors
-
 //All variables in the $theme-colors map are defined as standalone variables. To modify an existing color in our $theme-colors map, add the following to your custom Sass file:
 
 $white: #fff;
 $black: #000;
 $hell: #f2f2f2;
 $primary: #2498d0 !important;
-
 
 //Later on, these variables are set in Bootstrap’s $theme-colors map:
 $theme-colors: (
@@ -30,20 +26,7 @@ $custom-colors: (
         "hell": $hell,
 );
 
-
 $theme-colors: map-merge($theme-colors, $custom-colors);
-
-//btn color
-
-.btn-primary {
-  background: $primary;
-  border-color: $primary;
-  &:hover {
-    background: $white !important;
-    border-color: $primary;
-    color: $primary;
-  }
-}
 
 //background
 
@@ -51,15 +34,60 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
   background: $hell;
 }
 
+.bg-dark {
+  background: $black!important;
+}
+
+.bg-primary {
+  background: $primary;
+}
+
 
 //Sizing
 
 
+
 //fonts
 
+$text-small: .9rem;
+$text-medium: 1rem;
+$text-big: 1.5rem;
+$text-giant: 2rem;
 
-//autres
+h1, h2 {
+  font-size: $text-giant;
+  text-transform: uppercase;
+}
 
+h4, h5 {
+  font-size: $text-big;
+}
+
+p, a, li {
+  font-size: $text-small;
+}
+
+strong {
+  font-size: $text-medium;
+}
+
+//btn
+
+.btn-primary {
+  background: $primary;
+  border-color: $primary;
+  border-radius: 5px; //variable !
+  font-size: $text-small; //variable !
+  padding: .2rem .5rem;
+  &:hover {
+    background: $white !important;
+    border-color: $primary;
+    color: $primary;
+  }
+}
+
+
+//construct (classe brouillon pour le débug)
 .bg-red {
   background: #d06969;
 }
@@ -74,9 +102,18 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 
 //************************Les mixins
 
+@mixin img-adjust {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+}
+
 @mixin fit-content {
   width: fit-content;
   height: fit-content;
+}
+
+@mixin reset-m-p{
   margin: 0;
   padding: 0;
 }
