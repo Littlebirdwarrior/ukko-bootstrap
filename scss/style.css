@@ -17951,7 +17951,7 @@ h3, .h3, h4, .h4, h5, .h5 {
   color: #fff;
 }
 
-p, a, li {
+p, a, li, label, input, ::placeholder {
   font-size: 0.9rem;
   font-weight: 300 !important;
 }
@@ -18135,7 +18135,7 @@ h3, .h3, h4, .h4, h5, .h5 {
   color: #fff;
 }
 
-p, a, li {
+p, a, li, label, input, ::placeholder {
   font-size: 0.9rem;
   font-weight: 300 !important;
 }
@@ -18425,6 +18425,14 @@ strong {
   background-image: url("../../assets/img/img-content/petite/pexel6.jpg");
 }
 
+#contact div .form .fieldset div .form-label {
+  margin-bottom: 1rem;
+}
+#contact div .form .fieldset div input {
+  font-size: 0.9rem !important;
+  line-height: 1.3 !important;
+}
+
 .filet {
   display: block;
   width: 10%;
@@ -18439,6 +18447,9 @@ strong {
 }
 .filet--center {
   margin: 10px auto 0;
+}
+.filet--small {
+  width: 20px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -76,7 +76,7 @@ h3, h4, h5 {
   color: $white;
 }
 
-p, a, li {
+p, a, li, label, input, ::placeholder {
   font-size: $text-small;
   font-weight: $text-slim !important;
 }
