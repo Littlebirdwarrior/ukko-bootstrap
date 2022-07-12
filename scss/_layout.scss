@@ -1,5 +1,5 @@
 // ************Les style de la pages
-
+@import "_variables";
 //Section 1 : hero
 
 /* CUSTOMIZE THE CAROUSEL
@@ -27,7 +27,7 @@
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 22rem;
+  height: 32rem;
 
   > img {
     position: absolute;
@@ -35,6 +35,7 @@
     left: 0;
     min-width: 100%;
     height: 32rem;
+    filter: brightness(60%);
   }
 }
 
@@ -66,10 +67,12 @@
 }
 
 .prestashop {
- padding: 1rem !important;
+  padding: 1rem !important;
+
   li {
     list-style: none;
     @include reset-m-p;
+
     img {
       width: 150px;
       padding: -5px;
@@ -77,20 +80,31 @@
   }
 }
 
-//Section 3 : présentation
+//Section 3 : expertise
+
+.expertise {
+  @media (min-width: 700px) {
+    height: 500px;
+    overflow: hidden;
+    .expertise-content, .figure-adjust {
+      height: 500px;
+    }
+  }
+}
+
 
 .figure-adjust {
   width: 100%;
-  height: 100%;
+
   .img-adjust {
-  @include img-adjust;
+    @include img-adjust;
   }
 }
 
 .resp-negative-gap {
   @media (max-width: 43rem) {
-  margin-bottom: -3rem;
-}
+    margin-bottom: -3rem;
+  }
 }
 
 .vague-adjust {
@@ -106,11 +120,11 @@
       width: 25%;
       height: 200px;
       margin: 1rem;
-      background: #ffc720;
       padding: 4rem 1rem 0;
-
-      h5 {
+      background-size: cover;
+      h3 {
         text-align: center;
+        color: $white;
       }
 
       > a {
@@ -119,11 +133,44 @@
     }
 
     .feature-card:hover {
-      background: #50ff20;
+      background: $primary;
+      a {
+        @include btn-hover;
+      }
     }
   }
 }
 
+.bg-1 {
+  background-image: url("../../assets/img/img-content/petite/pexel2.jpg");
+}
+
+.bg-2 {
+  background-image: url("../../assets/img/img-content/petite/pexel4.jpg");
+}
+
+.bg-3 {
+  background-image: url("../../assets/img/img-content/petite/pexel6.jpg");
+}
 
 
+//décoration
 
+.filet {
+  display: block;
+  width: 10%;
+  height: 5px;
+  margin-top: 10px;
+
+  &--blue {
+    background: $primary;
+  }
+
+  &--white {
+    background: $white;
+  }
+
+  &--center {
+    margin: 10px auto 0
+  }
+}
