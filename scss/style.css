@@ -18313,14 +18313,15 @@ strong {
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 36rem;
 }
 .carousel-item > img {
   position: absolute;
   top: 0;
   left: 0;
   min-width: 100%;
-  height: 32rem;
+  height: 100%;
+  object-fit: cover;
   filter: brightness(60%);
 }
 
@@ -18389,11 +18390,11 @@ strong {
 
 .feature .feature-content .feature-card {
   min-width: 250px;
-  width: 25%;
+  width: 30%;
   height: 200px;
-  margin: 1rem;
   padding: 4rem 1rem 0;
   background-size: cover;
+  margin-bottom: 1rem;
 }
 .feature .feature-content .feature-card h3, .feature .feature-content .feature-card .h3 {
   text-align: center;
@@ -18414,15 +18415,15 @@ strong {
 }
 
 .bg-1 {
-  background-image: url("../../assets/img/img-content/petite/pexel2.jpg");
+  background-image: url("../../assets/img/img-content/petite/image-1.jpg");
 }
 
 .bg-2 {
-  background-image: url("../../assets/img/img-content/petite/pexel4.jpg");
+  background-image: url("../../assets/img/img-content/petite/image-2.jpg");
 }
 
 .bg-3 {
-  background-image: url("../../assets/img/img-content/petite/pexel6.jpg");
+  background-image: url("../../assets/img/img-content/petite/image-3.jpg");
 }
 
 #contact div .form .fieldset div .form-label {
@@ -18449,7 +18450,7 @@ strong {
   margin: 10px auto 0;
 }
 .filet--small {
-  width: 20px !important;
+  width: 50px !important;
 }
 
 /*# sourceMappingURL=style.css.map */

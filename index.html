@@ -8,6 +8,7 @@
 
     <!---favicone--->
     <link rel="icon" href="assets/img/favicons/favicon.ico">
+    <link rel="icon" href="assets/img/favicons/ukoo-logo.png">
 
     <title>Carousel Template for Bootstrap</title>
 
@@ -32,8 +33,8 @@
 <header class="py-2 bg-dark text-white">
     <div class="container col-md-8">
         <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between">
-            <a href="/" class="d-flex align-items-center mb-2 mb-md-0">
-                <img src="assets/img/ukoo-logo.png" alt="logo ukoo"/>
+            <a href="#" class="d-flex align-items-center mb-md-0">
+                <img class="" alt="logo-ukoo" src="assets/img/svg/logo_ukoo.svg" width="100px" height="50px"/>
             </a>
             <ul class="nav col-12 col-md-7 col-lg-5 mb-2 justify-content-center justify-content-md-between px-0">
                 <li><a href="#presentation" class="nav-link px-2 text-white">Présentation</a></li>
@@ -60,7 +61,7 @@
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <img class="first-slide"
-                         src="assets/img/img-content/grande/pexel4.jpg"
+                         src="assets/img/img-content/grande/image-1.jpg"
                          alt="First slide">
                     <div class="container">
                         <div class="carousel-caption text-center">
@@ -74,7 +75,7 @@
                 </div>
                 <div class="carousel-item">
                     <img class="second-slide"
-                         src="assets/img/img-content/grande/pexel2.jpg"
+                         src="assets/img/img-content/grande/image-2.jpg"
                          alt="Second slide">
                     <div class="container">
                         <div class="carousel-caption text-center">
@@ -88,7 +89,7 @@
                 </div>
                 <div class="carousel-item">
                     <img class="third-slide"
-                         src="assets/img/img-content/grande/pexel3.jpg"
+                         src="assets/img/img-content/grande/image-3.jpg"
                          alt="Third slide">
                     <div class="container">
                         <div class="carousel-caption text-center">
@@ -165,17 +166,17 @@
                 <div class="illustration-block row">
                     <figure class="illustration-block-figure col-6">
                         <img class="illustration-block-img rounded" alt="Card image cap"
-                             src="assets/img/img-content/petite/pexel6.jpg"/>
+                             src="assets/img/img-content/petite/image-1.jpg"/>
                     </figure>
                     <figure class="illustration-block-figure col-6">
                         <img class="illustration-block-img rounded" alt="Card image cap"
-                             src="assets/img/img-content/petite/pexel7.jpg"/>
+                             src="assets/img/img-content/petite/image-2.jpg"/>
                     </figure>
                 </div>
                 <div class="illustration-block row">
                     <figure class="illustration-block-figure col-12">
                         <img class="illustration-block-img rounded" alt="Card image cap"
-                             src="assets/img/img-content/moyenne/pexel7.jpg"/>
+                             src="assets/img/img-content/moyenne/image-3.jpg"/>
                     </figure>
                 </div>
             </div>
@@ -191,7 +192,7 @@
             <div class="col-md-6 mt-4 px-0 mx-0 resp-negative-gap">
                 <figure class="figure-adjust">
                     <img class="img-adjust" alt="Card image cap"
-                         src="assets/img/img-content/grande/pexel5.jpg"/>
+                         src="assets/img/img-content/moyenne/image-3.jpg"/>
                 </figure>
             </div>
             <div class="col-md-6 px-0 mx-0">
@@ -229,7 +230,7 @@
 
     <!----- Section 4 : features------------->
     <section id="feature" class="feature py-5 bg-white">
-        <div class="feature-content container d-flex flex-wrap justify-content-center justify-content-md-between col-md-8 m-auto">
+        <div class="feature-content container d-flex flex-wrap justify-content-center justify-content-md-between col-md-10 col-lg-8 m-auto">
             <!---custum flex to add-->
             <div class="feature-card mx-auto bg-1">
                 <h4 class="text-center">Titre niveau 3</h4>
@@ -253,31 +254,28 @@
         <h2 class="text-center">Contact <span class="filet filet--blue filet--center filet--small"></span></h2>
         <div class="my-3">
             <form class="col-10 col-md-8 m-auto row d-md-flex justify-content-md-around" method="post">
-                <fieldset class="col-md-5">
+                <fieldset class="col-md-6">
                     <div class="mb-2">
-                        <label for="nom" class="form-label">Votre nom</label>
-                        <input type="text" class="form-control" id="nom" placeholder="Votre nom"
+                        <label for="nom" class="form-label">Nom</label>
+                        <input type="text" class="form-control" id="nom" placeholder="Duval"
                         maxlength="25">
                     </div>
                     <div class="mb-2">
-                        <label for="prenom" class="form-label">Votre prénom</label>
-                        <input type="text" class="form-control" id="prenom" placeholder="Votre prénom" maxlength="25">
+                        <label for="prenom" class="form-label">Prénom</label>
+                        <input type="text" class="form-control" id="prenom" placeholder="Sofia" maxlength="25">
                     </div>
                     <div class="mb-2">
-                        <label for="email" class="form-label">Votre email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Votre email : name@example.com" maxlength="25">
-                    </div>
-                    <div class="mb-2">
-                        <label for="objet" class="form-label">Quel est votre demande ?</label>
-                        <input type="text" class="form-control" id="objet" placeholder="Object de votre demande" maxlength="25">
+                        <label for="email" class="form-label">Adresse email</label>
+                        <input type="email" class="form-control" id="email" placeholder="Votre email : sofia.duval@example.com" maxlength="25">
                     </div>
 
                 </fieldset>
                 <fieldset class="col-md-6">
                     <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="11" maxlength="250">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" maxlength="250">
                     </textarea>
                 </fieldset>
+
             </form>
 
 
