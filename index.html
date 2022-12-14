@@ -37,10 +37,10 @@
                 <img class="" alt="logo-ukoo" src="assets/img/svg/logo_ukoo.svg" width="100px" height="50px"/>
             </a>
             <ul class="nav col-12 col-md-7 col-lg-5 mb-2 justify-content-center justify-content-md-between px-0">
-                <li><a href="#presentation" class="nav-link px-2 text-white">Présentation</a></li>
-                <li><a href="#expertise" class="nav-link px-2 text-white">Expertise</a></li>
-                <li><a href="#feature" class="nav-link px-2 text-white">Accès Rapide</a></li>
-                <li><a href="#contact" class="nav-link px-2 text-white">Contact</a></li>
+                <li class="hover-primary"><a href="#presentation" class="nav-link px-2 text-white">Présentation</a></li>
+                <li class="hover-primary"><a href="#expertise" class="nav-link px-2 text-white">Expertise</a></li>
+                <li class="hover-primary"><a href="#feature" class="nav-link px-2 text-white">Accès Rapide</a></li>
+                <li class="hover-primary"><a href="#contact" class="nav-link px-2  text-white">Contact</a></li>
             </ul>
 
         </div>
@@ -53,13 +53,8 @@
 
     <section id="hero" class="container-fluid ">
         <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
-            <ol class="carousel-indicators">
-                <li data-target="#myCarousel" data-bs-slide-to="0" class="active"></li>
-                <li data-target="#myCarousel" data-bs-slide-to="1"></li>
-                <li data-target="#myCarousel" data-bs-slide-to="2"></li>
-            </ol>
             <div class="carousel-inner">
-                <div class="carousel-item active">
+                <div class="carousel-item active" data-bs-interval="2000">
                     <img class="first-slide"
                          src="assets/img/img-content/grande/image-1.jpg"
                          alt="First slide">
@@ -73,7 +68,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img class="second-slide"
                          src="assets/img/img-content/grande/image-2.jpg"
                          alt="Second slide">
@@ -87,7 +82,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item" data-bs-interval="2000">
                     <img class="third-slide"
                          src="assets/img/img-content/grande/image-3.jpg"
                          alt="Third slide">
@@ -102,15 +97,15 @@
                     </div>
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
+            <a class="carousel-control-prev control-visual control-visual--left" href="#myCarousel" role="button" data-bs-slide="prev" data-bs-target="#myCarousel">
                     <span class="carousel-control-prev-icon" aria-hidden="true">
                     </span>
-                <span class="sr-only"></span>
+                <span class="visually-hidden">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
+            <a class="carousel-control-next control-visual control-visual--right" href="#myCarousel" role="button" data-bs-slide="next" data-bs-target="#myCarousel">
                     <span class="carousel-control-next-icon " aria-hidden="true">
                     </span>
-                <span class="sr-only"></span>
+                <span class="visually-hidden">Previous</span>
             </a>
         </div>
     </section>
@@ -254,7 +249,7 @@
         <h2 class="text-center">Contact <span class="filet filet--blue filet--center filet--small"></span></h2>
         <div class="my-3">
             <form class="col-10 col-md-8 m-auto row d-md-flex justify-content-md-around" method="post">
-                <fieldset class="col-md-6">
+                <fieldset class="col-md-6 d-flex flex-column align-content-between py-0">
                     <div class="mb-2">
                         <label for="nom" class="form-label">Nom</label>
                         <input type="text" class="form-control" id="nom" placeholder="Duval"
@@ -264,16 +259,17 @@
                         <label for="prenom" class="form-label">Prénom</label>
                         <input type="text" class="form-control" id="prenom" placeholder="Sofia" maxlength="25">
                     </div>
-                    <div class="mb-2">
+                    <div class="align-bottom mb-2 mb-md-0 mt-md-1">
                         <label for="email" class="form-label">Adresse email</label>
                         <input type="email" class="form-control" id="email" placeholder="Votre email : sofia.duval@example.com" maxlength="25">
                     </div>
 
                 </fieldset>
-                <fieldset class="col-md-6">
+                <fieldset class="col-md-6 d-flex flex-column align-content-between">
                     <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="4" maxlength="250">
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="6" maxlength="250">
                     </textarea>
+                    <button type="submit" class="btn btn-primary mt-2">Submit</button>
                 </fieldset>
 
             </form>
