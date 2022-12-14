@@ -18557,6 +18557,14 @@ strong {
     margin: 2rem auto;
   }
 }
+#hero:hover > .carousel > .carousel-inner > .carousel-item .carousel-caption a {
+  background: #fff !important;
+  border-color: #2498d0 !important;
+  color: #2498d0 !important;
+  -webkit-animation: bounce-top 0.9s both;
+  animation: bounce-top 0.9s both;
+}
+
 .presentation-content-illustration .illustration-block {
   display: flex;
   justify-content: space-around;

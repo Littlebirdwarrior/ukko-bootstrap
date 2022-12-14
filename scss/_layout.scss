@@ -99,6 +99,10 @@
   }
 }
 
+#hero:hover >.carousel >.carousel-inner > .carousel-item .carousel-caption a{
+    @include btn-hover
+}
+
 
 //Section 2 : présentation
 
